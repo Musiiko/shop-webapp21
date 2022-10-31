@@ -1,0 +1,14 @@
+<c:out value="${query}"/><br>
+<c:if test="${not empty message}">
+    <c:out value="${message}"/>
+</c:if>
+<br>
+<c:if test="${not empty orders}">
+    <c:set var="index" value="${0}" />
+    <c:forEach var="order" items="${orders}">
+        <c:set var="index" value="${index+1}" />
+        <c:out value="Order #${index}"></c:out><br>
+        <%@ include file="/jspf/orderInfo.jspf"%>
+        <hr>
+    </c:forEach>
+</c:if>

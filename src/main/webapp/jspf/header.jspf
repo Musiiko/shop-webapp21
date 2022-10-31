@@ -1,0 +1,23 @@
+<ul>
+    <li><p><a href="index.jsp">Index</a><p>
+    <li>
+    <p><a href="showOrderByNumber">show order by number</a>
+    <a href="showOrdersBySumAndCount">show orders by sum and count</a>
+    <a href="showOrdersByProductName">show orders by product name</a>
+    <a href="showOrdersWithoutProductAndCurrentDate">show orders without product and current date</a>
+    </p>
+    </li>
+    <li><c:choose>
+        <c:when test="${not empty user}">
+            <p>You are logged in as ${user.login}</p> <a href="logout">Logout</a>
+        </c:when>
+        <c:otherwise>
+            <a href="login">Login</a>
+        </c:otherwise>
+    </c:choose>
+    <li><p>Authorized user operations</p>
+    <a href="deleteOrdersWithGivenCountAndProduct">deleteOrdersWithGivenCountAndProduct</a>
+    <a href="generateNewOrderFromProductsOrderedToday">generateNewOrderFromProductsOrderedToday</a>
+    </li>
+</ul>
+<hr><br>

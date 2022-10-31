@@ -1,0 +1,100 @@
+html, body {
+    height: 100%;
+    background-color: #fd4343;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+ul a {
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background: #722727;
+    color: #ffffff;
+    margin-right: 20px;
+}
+
+ul a:active {
+    background: #0c0505;
+}
+
+ul a:last-child {
+    margin-right: 0;
+}
+p {
+    margin-bottom: 20px;
+}
+.warning {
+    color: #960000;
+    background: #331010;
+    border-width: 2px;
+    padding: 20px 20px 20px 20px;
+    font-weight: bold;
+}
+form {
+    justify-content: center;
+    vertical-align: center;
+    margin: 0;
+}
+input[type=text] {
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: #722727;
+    padding: 0 10px;
+    color: #ffffff;
+}
+input {
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: #722727;
+    padding: 0 10px;
+    color: #ffffff;
+}
+input[type=submit] {
+    height: 40px;
+    /*width: 100%;*/
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: #421616;
+    padding: 0 10px;
+    color: #ffffff;
+    padding: 12px 20px;
+}
+/* Floating column for labels: 25% width */
+.col-25 {
+    float: left;
+    width: 15%;
+    margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+label{
+    font-weight: bold;
+}
+table tr{
+    color: white;
+}
+table td{
+    color: white;
+}
+
